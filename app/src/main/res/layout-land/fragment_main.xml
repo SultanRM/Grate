@@ -13,8 +13,7 @@
         android:textSize="20dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="60dp"
-        android:layout_alignParentTop="true"
-        android:text="55555555555555555" />
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:id="@+id/rate_text2"
@@ -23,8 +22,7 @@
         android:textSize="20dp"
         android:layout_below="@+id/rate_text1"
         android:layout_alignLeft="@+id/rate_text1"
-        android:layout_alignStart="@+id/rate_text1"
-        android:text="55555555555555555" />
+        android:layout_alignStart="@+id/rate_text1" />
 
     <TextView
         android:id="@+id/rate_text3"
@@ -34,8 +32,7 @@
         android:layout_below="@+id/rate_text2"
         android:layout_alignLeft="@+id/rate_text2"
         android:layout_alignStart="@+id/rate_text2"
-        android:layout_marginTop="10dp"
-        android:text="555555555555" />
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:id="@+id/rate_text4"
@@ -44,8 +41,7 @@
         android:textSize="20dp"
         android:layout_below="@+id/rate_text3"
         android:layout_alignLeft="@+id/rate_text3"
-        android:layout_alignStart="@+id/rate_text3"
-        android:text="555555555555555" />
+        android:layout_alignStart="@+id/rate_text3" />
 
     <TextView
         android:id="@+id/rate_text5"
@@ -54,8 +50,7 @@
         android:textSize="20dp"
         android:layout_below="@+id/rate_text4"
         android:layout_alignLeft="@+id/rate_text4"
-        android:layout_alignStart="@+id/rate_text4"
-        android:text="555555555555" />
+        android:layout_alignStart="@+id/rate_text4" />
 
     <RelativeLayout
         android:orientation="vertical"

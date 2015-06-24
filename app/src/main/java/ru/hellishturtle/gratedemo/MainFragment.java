@@ -27,9 +27,9 @@ public class MainFragment extends Fragment{
 
     final String LOG_TAG = "myLogs";
 
-    public static int year;
-    public static int month;
-    public static int day;
+    public static int year = 2015;
+    public static int month = 6;
+    public static int day = 24;
 
     static TextView rateText1;
     static TextView rateText2;
@@ -51,11 +51,11 @@ public class MainFragment extends Fragment{
         java.util.Calendar calendar = java.util.Calendar.getInstance(java.util.TimeZone.getDefault(), java.util.Locale.getDefault());
         calendar.setTime(new java.util.Date());
         int currentYear = calendar.get(java.util.Calendar.YEAR);
-        int currentMonth = calendar.get(Calendar.MONTH);
+        int currentMonth = calendar.get(Calendar.MONTH) + 1;
         int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
 
         year = currentYear;
-        month = currentMonth;
+        month = currentMonth + 1;
         day = currentDay;
 
 
@@ -93,8 +93,6 @@ public class MainFragment extends Fragment{
 
         btnAdd.setOnClickListener(new View.OnClickListener()
         {   ContentValues cv = new ContentValues();
-
-
 
             @Override
             public void onClick(View v)
@@ -166,7 +164,7 @@ public class MainFragment extends Fragment{
             int myMonth = c.get(Calendar.MONTH) + 1;
             int myDay = c.get(Calendar.DAY_OF_MONTH);
 
-            Log.d(LOG_TAG, "date" + myYear + " " + myMonth + " " + myDay);
+            Log.d(LOG_TAG, "date" + myYear + " !!! " + myMonth + " " + myDay);
 
 // Create a new instance of DatePickerDialog and return it
 
@@ -179,7 +177,7 @@ public class MainFragment extends Fragment{
         public void onDateSet(DatePicker view, int myYear, int myMonth, int myDay) {
 
             MainFragment.year = myYear;
-            MainFragment.month = myMonth;
+            MainFragment.month = myMonth + 1;
             MainFragment.day = myDay;
             new FileParser().execute();
         }
