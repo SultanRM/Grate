@@ -3,7 +3,6 @@ package ru.hellishturtle.gratedemo;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.ContentValues;
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
@@ -16,7 +15,6 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import java.util.Calendar;
-
 import ru.hellishturtle.gratedemo.DateBase.DBHelper;
 
 
@@ -46,7 +44,6 @@ public class MainFragment extends Fragment{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
         java.util.Calendar calendar = java.util.Calendar.getInstance(java.util.TimeZone.getDefault(), java.util.Locale.getDefault());
         calendar.setTime(new java.util.Date());

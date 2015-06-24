@@ -9,7 +9,16 @@
     <string name="delete">Delete</string>
     <string name="error">Error</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="add">ADD</string>
+    <string name="clear">CLEAR</string>
+    <string name="to_date">TO DATE</string>
+    <string name="read">READ</string>
+
+    <string name="date">TO DATE</string>
+    <string name="sour">TO DATE</string>
+    <string name="usd">TO DATE</string>
+    <string name="eur">TO DATE</string>
+    <string name="gbp">TO DATE</string>
 
 </resources>
