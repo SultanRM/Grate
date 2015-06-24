@@ -3,6 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="to_main">Home</string>
 
     <string name="insert">Insert</string>
     <string name="update">Update</string>
@@ -15,10 +16,10 @@
     <string name="to_date">TO DATE</string>
     <string name="read">READ</string>
 
-    <string name="date">TO DATE</string>
-    <string name="sour">TO DATE</string>
-    <string name="usd">TO DATE</string>
-    <string name="eur">TO DATE</string>
-    <string name="gbp">TO DATE</string>
+    <string name="date">Date:</string>
+    <string name="sour">Base:</string>
+    <string name="usd">USD:</string>
+    <string name="eur">EUR:</string>
+    <string name="gbp">GBP:</string>
 
 </resources>

@@ -14,6 +14,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import ru.hellishturtle.gratedemo.DateBase.Contract;
 import ru.hellishturtle.gratedemo.DateBase.DBHelper;
 
 
@@ -26,7 +27,6 @@ public class StatisticFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
     }
 
@@ -42,10 +42,10 @@ public class StatisticFragment extends Fragment {
 
         PutToList();
 
-            return view;
+        return view;
     }
 
-    public void PutToList () {
+    public void PutToList() {
 
         dbHelper = new DBHelper(getActivity());
 
@@ -54,10 +54,7 @@ public class StatisticFragment extends Fragment {
 
         // делаем запрос всех данных из таблицы mytable, получаем Cursor
 
-
         Cursor c = db.query("mytable", null, null, null, null, null, "date DESC");
-
-
 
         // ставим позицию курсора на первую строку выборки
         // если в выборке нет строк, вернется false

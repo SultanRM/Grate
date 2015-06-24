@@ -22,7 +22,6 @@ public class FileParser extends AsyncTask<Void, Void, String> {
     String resultJson = "";
     String currentDate = "";
 
-
     JSONObject dataJsonObj = null;
     String date = "";
     String sourceCurrency = "";
@@ -56,7 +55,7 @@ public class FileParser extends AsyncTask<Void, Void, String> {
             urlConnection.connect();
 
             InputStream inputStream = urlConnection.getInputStream();
-            StringBuffer buffer = new StringBuffer();
+            StringBuilder buffer = new StringBuilder();
 
             reader = new BufferedReader(new InputStreamReader(inputStream));
 

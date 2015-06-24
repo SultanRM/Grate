@@ -3,6 +3,7 @@ package ru.hellishturtle.gratedemo;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
@@ -18,7 +19,7 @@ import java.util.Calendar;
 import ru.hellishturtle.gratedemo.DateBase.DBHelper;
 
 
-public class MainFragment extends Fragment{
+public class MainFragment extends Fragment {
 
     public MainFragment() {
     }
@@ -48,11 +49,11 @@ public class MainFragment extends Fragment{
         java.util.Calendar calendar = java.util.Calendar.getInstance(java.util.TimeZone.getDefault(), java.util.Locale.getDefault());
         calendar.setTime(new java.util.Date());
         int currentYear = calendar.get(java.util.Calendar.YEAR);
-        int currentMonth = calendar.get(Calendar.MONTH) + 1;
+        int currentMonth = calendar.get(Calendar.MONTH);
         int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
 
         year = currentYear;
-        month = currentMonth + 1;
+        month = currentMonth +1;
         day = currentDay;
 
 
@@ -67,7 +68,6 @@ public class MainFragment extends Fragment{
 
 
         btnAdd = (Button) view.findViewById(R.id.btnAdd);
-       // btnRead = (Button) view.findViewById(R.id.btnRead);
         btnClear = (Button) view.findViewById(R.id.btnClear);
         button = (Button) view.findViewById(R.id.button);
 
@@ -77,16 +77,6 @@ public class MainFragment extends Fragment{
         rateText4 = (TextView) view.findViewById(R.id.rate_text4);
         rateText5 = (TextView) view.findViewById(R.id.rate_text5);
 
-      /** btnRead.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(getActivity(), StatisticActivity.class);
-                startActivity(intent);
-
-            }
-        });*/
 
         btnAdd.setOnClickListener(new View.OnClickListener()
         {   ContentValues cv = new ContentValues();
@@ -117,6 +107,9 @@ public class MainFragment extends Fragment{
 
                 new FileParser().execute();
             }
+            StatisticActivity st = new StatisticActivity();
+
+
         });
 
         btnClear.setOnClickListener(new View.OnClickListener() {
@@ -158,10 +151,10 @@ public class MainFragment extends Fragment{
 // Use the current date as the default date in the picker
             final Calendar c = Calendar.getInstance();
             int myYear = c.get(Calendar.YEAR);
-            int myMonth = c.get(Calendar.MONTH) + 1;
+            int myMonth = c.get(Calendar.MONTH);
             int myDay = c.get(Calendar.DAY_OF_MONTH);
 
-            Log.d(LOG_TAG, "date" + myYear + " !!! " + myMonth + " " + myDay);
+            Log.d(LOG_TAG, "date" + myYear + " " + myMonth + " " + myDay);
 
 // Create a new instance of DatePickerDialog and return it
 

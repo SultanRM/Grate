@@ -11,7 +11,7 @@ import android.net.Uri;
 
 public class RatesContentProvider extends ContentProvider {
 
-    static final int URI_RATES = 1;
+    public static final int URI_RATES = 1;
     static final int URI_RATES_ID = 2;
 
     private static final SQLiteQueryBuilder queryBuilder = new SQLiteQueryBuilder();

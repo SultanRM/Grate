@@ -8,23 +8,29 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.LoaderManager;
 import android.support.v7.app.ActionBarActivity;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 
 import ru.hellishturtle.gratedemo.DateBase.Contract;
 import ru.hellishturtle.gratedemo.DateBase.DBHelper;
+import ru.hellishturtle.gratedemo.DateBase.RatesContentProvider;
 
 
 public class MainActivity extends ActionBarActivity {
 
 
     MainFragment mainFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +42,7 @@ public class MainActivity extends ActionBarActivity {
     public void onClick(View view) {
         Intent intent = new Intent(MainActivity.this, StatisticActivity.class);
         startActivity(intent);
+
     }
 
 }

@@ -7,7 +7,7 @@
     android:weightSum="1">
 
     <fragment
-        android:layout_width="300dp"
+        android:layout_width="453dp"
         android:layout_height="match_parent"
         android:id="@+id/FirstFragment"
         android:name="ru.hellishturtle.gratedemo.MainFragment"

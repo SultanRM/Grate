@@ -6,8 +6,10 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
+
+
     <fragment
-        android:layout_width="300dp"
+        android:layout_width="304dp"
         android:layout_height="match_parent"
         android:id="@+id/FirstFragment"
         android:name="ru.hellishturtle.gratedemo.MainFragment"
@@ -16,7 +18,7 @@
 
     <fragment
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/SecondFragment"
         android:name="ru.hellishturtle.gratedemo.StatisticFragment"
         tools:layout="@layout/fragment_statistic">
