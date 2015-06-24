@@ -13,8 +13,7 @@
         android:textSize="20dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="60dp"
-        android:layout_alignParentTop="true"
-        android:text="55555555555555555" />
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:id="@+id/rate_text2"
@@ -23,8 +22,7 @@
         android:textSize="20dp"
         android:layout_below="@+id/rate_text1"
         android:layout_alignLeft="@+id/rate_text1"
-        android:layout_alignStart="@+id/rate_text1"
-        android:text="55555555555555555" />
+        android:layout_alignStart="@+id/rate_text1" />
 
     <TextView
         android:id="@+id/rate_text3"
@@ -34,8 +32,7 @@
         android:layout_below="@+id/rate_text2"
         android:layout_alignLeft="@+id/rate_text2"
         android:layout_alignStart="@+id/rate_text2"
-        android:layout_marginTop="10dp"
-        android:text="555555555555" />
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:id="@+id/rate_text4"
@@ -44,8 +41,7 @@
         android:textSize="20dp"
         android:layout_below="@+id/rate_text3"
         android:layout_alignLeft="@+id/rate_text3"
-        android:layout_alignStart="@+id/rate_text3"
-        android:text="555555555555555" />
+        android:layout_alignStart="@+id/rate_text3" />
 
     <TextView
         android:id="@+id/rate_text5"
@@ -54,32 +50,32 @@
         android:textSize="20dp"
         android:layout_below="@+id/rate_text4"
         android:layout_alignLeft="@+id/rate_text4"
-        android:layout_alignStart="@+id/rate_text4"
-        android:text="555555555555" />
+        android:layout_alignStart="@+id/rate_text4" />
 
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout"
-        android:layout_alignRight="@+id/rate_text2"
-        android:layout_alignEnd="@+id/rate_text2"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rate_text5">
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ADD"
             android:id="@+id/btnAdd"
             android:layout_below="@+id/button"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:background="@drawable/selector_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="160dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TO DATE"
             android:id="@+id/button"
@@ -88,18 +84,22 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="false"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="false" />
+            android:layout_alignParentEnd="false"
+            android:background="@drawable/selector_button"/>
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CLEAR"
             android:id="@+id/btnClear"
             android:layout_gravity="center_vertical"
             android:layout_below="@+id/btnAdd"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:background="@drawable/selector_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
 

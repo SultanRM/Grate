@@ -53,51 +53,52 @@
         android:layout_alignStart="@+id/rate_text4" />
 
     <RelativeLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:id="@+id/linearLayout"
-        android:layout_alignRight="@+id/rate_text2"
-        android:layout_alignEnd="@+id/rate_text2"
-        android:layout_below="@+id/rate_text5">
+        android:layout_below="@+id/rate_text5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="80dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
             android:text="ADD"
             android:id="@+id/btnAdd"
-            android:layout_above="@+id/btnClear"
+            android:layout_alignTop="@+id/btnClear"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_toLeftOf="@+id/btnClear"
+            android:layout_toStartOf="@+id/btnClear"
+            android:background="@drawable/selector_button"
+            android:layout_marginRight="10dp" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="80dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
             android:text="CLEAR"
             android:id="@+id/btnClear"
             android:layout_gravity="center_vertical"
+            android:layout_above="@+id/button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/selector_button"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="TO DATE"
+            android:id="@+id/button"
+            android:layout_gravity="bottom"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="160dp"
-            android:layout_height="40dp"
-            android:text="TO DATE"
-            android:id="@+id/button"
-            android:layout_gravity="bottom"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/selector_button"
+            android:layout_marginTop="10dp" />
 
     </RelativeLayout>
 
